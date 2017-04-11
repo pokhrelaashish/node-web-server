@@ -17,11 +17,11 @@ app.use((req, res, next) => {
 	next();
 });
 
-app.use((req, res, next) => {
-	res.render('maintenance.hbs', {
-		maintenanceMessage: 'Maintenance in progress'
-	});
-});
+// app.use((req, res, next) => {
+// 	res.render('maintenance.hbs', {
+// 		maintenanceMessage: 'Maintenance in progress'
+// 	});
+// });
 
 hbs.registerHelper('getCurrentYear', () => {
 	return new Date().getFullYear();
